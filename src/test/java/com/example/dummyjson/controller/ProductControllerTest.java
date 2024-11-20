@@ -2,7 +2,6 @@ package com.example.dummyjson.controller;
 
 import com.example.dummyjson.dto.Product;
 import com.example.dummyjson.service.ProductService;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
