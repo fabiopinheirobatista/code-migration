@@ -35,7 +35,11 @@ dummyjson-client
 │   │   │       ├── service
 │   │   │       │   └── ProductService.java
 │   │   └── resources
+<<<<<<< HEAD
 │   │       └── application.yaml
+=======
+│   │       └── application.yml
+>>>>>>> feature/updating-tests
 │   └── test
 │       ├── java
 │       │   └── com.example.dummyjsonclient
