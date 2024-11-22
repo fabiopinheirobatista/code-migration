@@ -1,26 +1,12 @@
 package com.example.dummyjson.dto;
 
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-
 public class Product {
-
-    @NotNull
-    @Min(0L)
-    @Max(999L)
     private Long id;
-
-    @NotNull
-    private String title;
-
-    @NotNull
+    private String name;
+    private double price;
     private String description;
-
-    @NotNull
-    private Double price;
-
-    // Getters and Setters
+    private String category;
+    private int stock;
 
     public Long getId() {
         return id;
@@ -30,12 +16,20 @@ public class Product {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public String getDescription() {
@@ -46,11 +40,19 @@ public class Product {
         this.description = description;
     }
 
-    public Double getPrice() {
-        return price;
+    public String getCategory() {
+        return category;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }
